@@ -7,5 +7,8 @@ namespace senai.hroads.webApi.Domains
 {
     public class ClasseHabilidade
     {
+        public int IdClasseHabilidade { get; set; }
+        public Classe classe { get; set; }
+        public Habilidade habilidade { get; set; }
     }
 }
