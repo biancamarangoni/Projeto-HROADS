@@ -43,9 +43,9 @@ namespace senai.hroads.webApi.Contexts
             modelBuilder.Entity<Classe>(entity =>
             {
                 entity.HasKey(e => e.IdClasse)
-                    .HasName("PK__estudio__F31FDB360D2DF14B");
+                    .HasName("PK__Classe__60FFF80191BADD6A");
 
-                entity.ToTable("estudio");
+                entity.ToTable("classe");
 
                 entity.HasIndex(e => e.NomeClasse, "UQ__estudio__4C38603751F47472")
                     .IsUnique();
