@@ -35,12 +35,5 @@ namespace senai.hroads.webApi.Interfaces
         /// <param name="ClasseAtualizado">Objeto ClasseAtualizado com os novos dados</param>
         /// ex: http://localhost:5000/api/Classe/atualizar/3
         void Atualizar(int idClasse, Classe ClasseAtualizado);
-
-        /// <summary>
-        /// Cadastra uma novo Classe
-        /// </summary>
-        /// <param name="novaClasse">Objeto novaClasse com os dados que serão cadastrados</param>
-        void Inserir(Classe novaClasse);
-    
     }
 }

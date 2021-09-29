@@ -1,4 +1,5 @@
-﻿using senai.hroads.webApi.Domains;
+﻿using senai.hroads.webApi.Context;
+using senai.hroads.webApi.Domains;
 using senai.hroads.webApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,29 +10,52 @@ namespace senai.hroads.webApi.Repositories
 {
     public class ClasseRepository : IClasseRepository
     {
-        public void Atualizar(int idClasse, Classe ClasseAtualizado)
+        HroadsContext ctx = new HroadsContext();
+
+        public void Atualizar(int IdClasse, Classe classeAtualizado)
         {
-            throw new NotImplementedException();
+            Classe classeBuscado = BuscarId(IdClasse);
+
+            if (classeAtualizado.NomeClasse != null)
+            {
+                classeBuscado.NomeClasse = classeAtualizado.NomeClasse;
+            }
+
+            ctx.Classes.Update(classeBuscado);
+
+            ctx.SaveChanges();
         }
 
-        public Classe BuscarPorId(int idClasse)
+        public Classe BuscarId(int IdClasse)
         {
-            throw new NotImplementedException();
+            return ctx.Classes.FirstOrDefault(c => c.IdClasse == IdClasse);
         }
 
-        public void Deletar(int idClasse)
+        public void Cadastrar(Classe novaClasse)
         {
-            throw new NotImplementedException();
+            ctx.Classes.Add(novaClasse);
+
+            ctx.SaveChanges();
         }
 
-        public void Inserir(Classe novaClasse)
+        public void Deletar(int IdClasse)
         {
-            throw new NotImplementedException();
+            Classe classeBuscado = BuscarId(IdClasse);
+
+            ctx.Classes.Remove(classeBuscado);
+
+            ctx.SaveChanges();
         }
 
         public List<Classe> ListarTodos()
         {
-            throw new NotImplementedException();
+            return ctx.Classes.ToList();
+        }
+
+        Classe IClasseRepository.BuscarPorId(int IdClasse)
+        {
+            return ctx.Classes.FirstOrDefault(c => c.IdClasse == IdClasse);
         }
     }
 }
+
