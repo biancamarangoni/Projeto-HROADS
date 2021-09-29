@@ -22,6 +22,8 @@ namespace senai.hroads.webApi.Interfaces
         /// <returns>Um objeto do tipo Classe que foi buscada</returns>
         Classe BuscarPorId(int idClasse);
 
+        public void Cadastrar(Classe novaClasse);
+
         /// <summary>
         /// Deleta uma Classe
         /// </summary>

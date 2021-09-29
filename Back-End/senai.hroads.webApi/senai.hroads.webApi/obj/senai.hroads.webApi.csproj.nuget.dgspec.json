@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fic\\Desktop\\Medina\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {}
+    "C:\\Users\\FIC\\Desktop\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fic\\Desktop\\Medina\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {
+    "C:\\Users\\FIC\\Desktop\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fic\\Desktop\\Medina\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
+        "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
         "projectName": "senai.hroads.webApi",
-        "projectPath": "C:\\Users\\fic\\Desktop\\Medina\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
-        "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fic\\Desktop\\Medina\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\obj\\",
+        "projectPath": "C:\\Users\\FIC\\Desktop\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\senai.hroads.webApi.csproj",
+        "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FIC\\Desktop\\Projeto-HROADS\\Back-End\\senai.hroads.webApi\\senai.hroads.webApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

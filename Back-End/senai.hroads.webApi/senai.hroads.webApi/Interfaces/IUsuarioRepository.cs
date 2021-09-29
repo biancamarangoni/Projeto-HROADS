@@ -9,36 +9,40 @@ namespace senai.hroads.webApi.Interfaces
     interface IUsuarioRepository
     {
         /// <summary>
-        /// Retorna todos os Usuario
+        /// Lista todos os usuários
         /// </summary>
-        /// <returns>Uma lista de Usuario</returns>
+        /// <returns></returns>
         List<Usuario> ListarTodos();
 
-        /// <summary>
-        /// Busca um Usuario através do seu id
-        /// </summary>
-        /// <param name="idUsuario">Id do Usuario que será buscado</param>
-        /// <returns>Um objeto do tipo Usuario que foi buscado</returns>
-        Usuario BuscarPorId(int idUsuario);
 
         /// <summary>
-        /// Deleta um Usuario
+        /// Cadastra um novo usuário
         /// </summary>
-        /// <param name="idUsuario">Id do Usuario que será deletado</param>
-        void Deletar(int idUsuario);
+        /// <param name="novoUsuario"></param>
+        void Cadastrar(Usuario novoUsuario);
+
 
         /// <summary>
-        /// Atualiza um Usuario existente passando o id pela URL da requisição
+        /// Deleta um usuário
         /// </summary>
-        /// <param name="idTipoUsuario">id do Usuario que será atualizado</param>
-        /// <param name="UsuarioAtualizado">Objeto UsuarioAtualizado com os novos dados</param>
-        /// ex: http://localhost:5000/api/Usuario/atualizar/3
-        void Atualizar(int idUsuario, Usuario UsuarioAtualizado);
+        /// <param name="IdUsuario">id do usuario que será deletado</param>
+        void Deletar(int IdUsuario);
+
 
         /// <summary>
-        /// Cadastra um novo Usuario
+        /// Busca um usuário pelo seu id
         /// </summary>
-        /// <param name="novoUsuario">Objeto Usuario com os dados que serão cadastrados</param>
-        void Inserir(Usuario novoTipoUsuario);
+        /// <param name="IdUsuario">id do usuário que será buscado</param>
+        /// <returns></returns>
+        Usuario BuscarId(int IdUsuario);
+
+        /// <summary>
+        /// Atualiza os dados de um usuario existente
+        /// </summary>
+        /// <param name="IdUsuario">id do usuario que será atualizado</param>
+        /// <param name="usuarioAtualizado">objeto usuarioAtualizado com as novas informações</param>
+        void Atualizar(int IdUsuario, Usuario usuarioAtualizado);
+
+        Usuario Login(string email, string senha);
     }
 }

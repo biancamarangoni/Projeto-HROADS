@@ -35,10 +35,7 @@ namespace senai.hroads.webApi.Interfaces
         /// ex: http://localhost:5000/api/Personagem/atualizar/3
         void Atualizar(int idPersonagem, Personagem PersonagemAtualizado);
 
-        /// <summary>
-        /// Cadastra um novo Personagem
-        /// </summary>
-        /// <param name="novoPersonagem">Objeto novoPersonagem com os dados que serão cadastrados</param>
-        void Inserir(Personagem novoPersonagem);
+
+        public void Cadastrar(Personagem personagem);
     }
 }

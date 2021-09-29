@@ -27,6 +27,8 @@ namespace senai.hroads.webApi.Interfaces
         /// <param name="idHabilidade">Id da Habilidade que será deletado</param>
         void Deletar(int idHabilidade);
 
+        public void Cadastrar(Habilidade novaHabilidade);
+
         /// <summary>
         /// Atualiza uma Habilidade existente passando o id pela URL da requisição
         /// </summary>

@@ -35,10 +35,6 @@ namespace senai.hroads.webApi.Interfaces
         /// ex: http://localhost:5000/api/TipoUsuario/atualizar/3
         void Atualizar(int idTipoUsuario, TipoUsuario TipoUsuarioAtualizado);
 
-        /// <summary>
-        /// Cadastra um novo TipoUsuario
-        /// </summary>
-        /// <param name="novoTipoUsuario">Objeto TipoUsuario com os dados que serão cadastrados</param>
-        void Inserir(TipoUsuario novoTipoUsuario);
+        public void Cadastrar(TipoUsuario TipoUsuario);
     }
 }

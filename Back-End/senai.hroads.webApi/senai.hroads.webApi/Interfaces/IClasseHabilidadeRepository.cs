@@ -27,6 +27,8 @@ namespace senai.hroads.webApi.Interfaces
         /// <param name="idClasseHabilidade">Id da ClasseHabilidade que será deletado</param>
         void Deletar(int idClasseHabilidade);
 
+        public void Cadastrar(ClasseHabilidade ClassHab);
+
         /// <summary>
         /// Atualiza uma ClasseHabilidade existente passando o id pela URL da requisição
         /// </summary>
@@ -35,10 +37,5 @@ namespace senai.hroads.webApi.Interfaces
         /// ex: http://localhost:5000/api/ClasseHabilidade/atualizar/3
         void Atualizar(int idClasseHabilidade, ClasseHabilidade ClasseHabilidadeAtualizado);
 
-        /// <summary>
-        /// Cadastra uma novo ClasseHabilidade
-        /// </summary>
-        /// <param name="novaClasseHabilidade">Objeto novaClasseHabilidade com os dados que serão cadastrados</param>
-        void Inserir(ClasseHabilidade novaClasseHabilidade);
     }
 }
