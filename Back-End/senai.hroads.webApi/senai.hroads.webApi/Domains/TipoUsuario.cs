@@ -1,14 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+#nullable disable
 
 namespace senai.hroads.webApi.Domains
 {
-    public class TipoUsuario
+    public partial class TipoUsuario
     {
+        public TipoUsuario()
+        {
+            Usuarios = new HashSet<Usuario>();
+        }
+
         public int IdTipoUsuario { get; set; }
         public string TiposUsuario { get; set; }
-    }
 
+        public virtual ICollection<Usuario> Usuarios { get; set; }
+    }
 }

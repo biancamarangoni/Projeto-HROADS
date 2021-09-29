@@ -1,18 +1,6 @@
 USE SENAI_HROADS_MANHA;
 GO
 
-INSERT INTO Personagem (idClasse,nome,capVida,capMana,dataAtt,dataCriacao)
-VALUES (1,'DeuBug',100,80,'2021-08-10','2019-01-18');
-GO
-
-INSERT INTO Personagem (idClasse,nome,capVida,capMana,dataAtt,dataCriacao)
-VALUES (4,'BitBug',70,100,'2021-08-10','2016-03-17');
-GO
-
-INSERT INTO Personagem (idClasse,nome,capVida,capMana,dataAtt,dataCriacao)
-VALUES (7,'Fer8',75,60,'2021-08-10','2018-03-18');
-GO
-
 INSERT INTO Classe (nomeClasse)
 VALUES ('Bárbaro'),('Cruzado'),('Caçadora de Demônios'),('Monge'),('Necromante'),('Feiticeiro'),('Arcanista');
 GO
@@ -35,6 +23,19 @@ GO
 
 INSERT INTO ClasseHabilidade(idClasse,idHabilidade)
 VALUES (1,1),(1,2),(2,2),(3,1),(4,3),(4,2),(6,NULL),(5,3),(7,NULL)
+
+
+INSERT INTO Personagem (idClasse,nome,capVida,capMana,dataAtt,dataCriacao)
+VALUES (1,'DeuBug',100,80,'2021-08-10','2019-01-18');
+GO
+
+INSERT INTO Personagem (idClasse,nome,capVida,capMana,dataAtt,dataCriacao)
+VALUES (4,'BitBug',70,100,'2021-08-10','2016-03-17');
+GO
+
+INSERT INTO Personagem (idClasse,nome,capVida,capMana,dataAtt,dataCriacao)
+VALUES (7,'Fer8',75,60,'2021-08-10','2018-03-18');
+GO
 
 UPDATE Personagem
 SET nome = 'Fer7'

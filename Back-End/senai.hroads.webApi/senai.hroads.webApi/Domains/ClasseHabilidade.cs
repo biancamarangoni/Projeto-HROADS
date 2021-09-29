@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+#nullable disable
 
 namespace senai.hroads.webApi.Domains
 {
-    public class ClasseHabilidade
+    public partial class ClasseHabilidade
     {
         public int IdClasseHabilidade { get; set; }
-        public Classe classe { get; set; }
-        public Habilidade habilidade { get; set; }
+        public int? IdClasse { get; set; }
+        public int? IdHabilidade { get; set; }
+
+        public virtual Classe IdClasseNavigation { get; set; }
+        public virtual Habilidade IdHabilidadeNavigation { get; set; }
     }
 }
