@@ -34,11 +34,5 @@ namespace senai.hroads.webApi.Interfaces
         /// <param name="HabilidadeAtualizado">Objeto HabilidadeAtualizado com os novos dados</param>
         /// ex: http://localhost:5000/api/Habilidade/atualizar/3
         void Atualizar(int idHabilidade, Habilidade HabilidadeAtualizado);
-
-        /// <summary>
-        /// Cadastra uma novo Habilidade
-        /// </summary>
-        /// <param name="novaHabilidade">Objeto Habilidade com os dados que serão cadastrados</param>
-        void Inserir(Habilidade novaHabilidade);
     }
 }
